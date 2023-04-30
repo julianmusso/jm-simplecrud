@@ -107,7 +107,7 @@ export default function TaskDetail({ task, error }) {
 
 export async function getServerSideProps({ query: { id } }) {
 
-    const apiURL = process.env.APP_URL
+    const apiURL = process.env.NEXT_PUBLIC_API_URL
 
     const res = await fetch(`${apiURL}/api/tasks/${id}`)
     if (res.status === 200) {
