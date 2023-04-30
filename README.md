@@ -1,38 +1,26 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Simple CRUD Task Manager
 
-## Getting Started
+Este es un ejemplo de una aplicación CRUD simple para manejar tareas. La aplicación permite crear, leer, actualizar y eliminar tareas.
 
-First, run the development server:
+## Requerimientos
+- Node.js (versión 12 o superior)
+- MongoDB (versión 4 o superior)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+## Instalación
+1. Clonar este repositorio.
+2. Instalar las dependencias con `npm install`.
+3. Crear un archivo `.env` en la raíz del proyecto y configurar las siguientes variables de entorno:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+MONGODB_URI= `Indica la URL de tu MongoDB.` Recuerda envolver la URL entre comillas.
+NEXT_PUBLIC_API_URL= `Indica la URL de tu app.` Puedes utilizar `'http://localhost:3000'` para proyectos en tu máquina local.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+4. Iniciar la aplicación con `npm start`.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## Uso
+- Para crear una nueva tarea, ir a `/tasks/new`.
+- En la pantalla de inicio `/`, se muestran todas las tareas. Se puede hacer clic en el botón "ver" para ver una tarea individualmente o en el botón "borrar" para eliminar una tarea.
+- Para editar una tarea, hacer clic en el botón "ver" y luego en el botón "editar".
+- Para eliminar una tarea, hacer clic en el botón "borrar" en la pantalla de inicio.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Licencia
+Este proyecto está licenciado bajo la Licencia MIT - ve el archivo [LICENSE](LICENSE) para más detalles.
