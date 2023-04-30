@@ -11,8 +11,8 @@ Este es un ejemplo de una aplicación CRUD simple para manejar tareas. La aplica
 2. Instalar las dependencias con `npm install`.
 3. Crear un archivo `.env` en la raíz del proyecto y configurar las siguientes variables de entorno:
 
-MONGODB_URI= `Indica la URL de tu MongoDB.` Recuerda envolver la URL entre comillas.
-NEXT_PUBLIC_API_URL= `Indica la URL de tu app.` Puedes utilizar `'http://localhost:3000'` para proyectos en tu máquina local.
+- MONGODB_URI= `Indica la URL de tu MongoDB.` Recuerda envolver la URL entre comillas.
+- NEXT_PUBLIC_API_URL= `Indica la URL de tu app.` Puedes utilizar `'http://localhost:3000'` para proyectos en tu máquina local.
 
 4. Iniciar la aplicación con `npm start`.
 
